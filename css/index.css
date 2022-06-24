@@ -1,20 +1,60 @@
 .inputA {
-    background: #393851 !important;
-    color: #fff !important;
-    /* max-width: 100%; */
-    height: 40px;
-    border: 1px solid transparent !important;
-    border-radius: 0px !important;
+  background: #393851 !important;
+  color: #fff !important;
+  /* max-width: 100%; */
+  height: 40px;
+  border: 1px solid transparent !important;
+  border-radius: 0px !important;
+}
+@media screen and (max-width: 576px) {
+  .inputA {
+    height: auto !important;
+  }
 }
 .gradient-borderA,
 .gradient-borderA::after,
 .gradient-borderA::before {
-    width: 100% !important;
+  width: 100% !important;
 }
 .min_w {
-    min-width: auto !important;
+  min-width: auto !important;
 }
 .header_btn_bgc {
-    background: rgb(56, 48, 80) !important;
-    border-radius: 6px;
+  background: rgb(56, 48, 80) !important;
+  border-radius: 6px;
+}
+
+.selectorA:after {
+  display: inline-block;
+  width: 0;
+  visibility: hidden;
+  content: "\a0";
+}
+
+.dropdown-centerCenter {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0 1rem;
+  font-weight: bold;
+}
+.centerCenter {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* justify-content: space-between; */
+  /* margin-left: 1.5rem; */
+  /* padding-left: 5rem; */
+  font-weight: bold;
+}
+.USD-bg-dark {
+  background: #343642 !important;
+  transform: none !important;
+  min-width: 100% !important;
+}
+.USD-bg-dark .dropdown-item:hover {
+  background: #5915e1 !important;
+  color: #fff !important;
+  overflow: hidden;
 }

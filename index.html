@@ -79,6 +79,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!--  -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="apple-touch-icon" href="/logo192.png">
   <link rel="stylesheet" href="/css/index.css">
   <link rel="manifest" href="/manifest.json">
@@ -92,12 +93,19 @@
   <link rel="stylesheet" type="text/css" href="/css/3.7172086b.chunk.css">
   <script charset="utf-8" src="/static/js/3.9de33f1d.chunk.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/22.9f6f689a.chunk.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- JQ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
     integrity="sha512-S/9J6NHFtFQNDgyaqr8tAx0HEl7VvrQV7oBMR1SfXfzQ4pmFwAOnKUb4dW3cSYe8t1DzdCY/ZlXrsw7oa3lstA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- <script charset="utf-8" src="/static/js/22.d956e88b.chunk.js"></script><input type="hidden" id="_w_marrow" -->
   <!-- data-inspect-config="3"> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"
     integrity="sha512-S/9J6NHFtFQNDgyaqr8tAx0HEl7VvrQV7oBMR1SfXfzQ4pmFwAOnKUb4dW3cSYe8t1DzdCY/ZlXrsw7oa3lstA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-is/18.2.0/umd/react-is.production.min.js"
@@ -107,7 +115,7 @@
     integrity="sha512-hoMPTt5Xh8Xg1t9Z0WE5hufcGcwGgMDAUvG5wunObnwa4MU5Jr0oRMW5laiZI0eBgeY0NSna0rsOiHNBnoETQw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/create-react-class/15.7.0/create-react-class.min.js"
-    referrerpolicy="no-referrer"></script>
+    referrerpolicy="no-referrer"></script> -->
   <script type="text/javascript"
     src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script>
 </head>
@@ -160,11 +168,13 @@
           </div><img src="/static/media/white-close.481cddd1.svg" class="white-close">
         </div> -->
         <div class="">
-          <div class="top-menu-bar ">
+          <div class="top-menu-bar p-3 p-md-5 py-4">
             <div class="inner-box"><a href="/?lang=en-US#/home" class="sun-logo"><img
                   src="/static/media/SUNLogo.df17f86b.svg" alt="SUN Logo"></a>
             </div>
-            <div class="">
+
+            <div class="d-flex">
+              <a href="#"><i class="bx bxl-telegram bx-tada fa-2x text-light pr-2"></i></a>
               <!-- 加入 -->
               <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle min_w header_btn_bgc" type="button"
@@ -187,7 +197,7 @@
                   <div class="hero-intro-card">
                     <div class="title">SUN Ecosystem</div>
                     <div class="content">First integrated platform for stablecoin swap, yield farming, and
-                      self-governance on TRON</div><a href="#/usdd_2pool?tab=swap"><img class="usdd-link"
+                      self-governance on TRON</div><a href="#"><img class="usdd-link"
                         src="/static/media/usdd-link-en.1caeaae4.png"></a>
                   </div>
                   <div class="hero-tvl-card">
@@ -230,7 +240,55 @@
                         <div class="flex"><input placeholder="Enter an Amount" class="ant-input from-input en"
                             type="text" value="">
                           <div class="ant-select ant-select-single ant-select-show-arrow">
-                            <div class="ant-select-selector"><span class="ant-select-selection-search"><input
+                            <!-- 加入 -->
+                            <div class="dropdown">
+                              <span class="btn btn-secondary dropdown-toggle ant-select-selector py-0 px-1"
+                                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="dropdown-centerCenter">
+                                  <img src="/static/media/icon/BTC.png" alt="usdj icon" class="token-logo">BTC<img
+                                    class=" pl-4" src="/static/media/white-triangle-down.86bd9763.svg"></span>
+
+                              </span>
+                              <div class="dropdown-menu h-auto USD-bg-dark p-0 m-0"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/BTC.png" alt="USDD icon" class="token-logo ml-4">BTC</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/ETH.png" alt="USDD icon" class="token-logo ml-4">ETH</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/LTC.png" alt="USDD icon" class="token-logo ml-4">LTC</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/HT.png" alt="USDD icon" class="token-logo ml-4">HT</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/USDC.png" alt="USDD icon"
+                                    class="token-logo ml-4">USDC</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/TUSD.png" alt="USDD icon"
+                                    class="token-logo ml-4">TUSD</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/USDJ.png" alt="USDD icon"
+                                    class="token-logo ml-4">USDJ</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/USDT.png" alt="USDD icon"
+                                    class="token-logo ml-4">USDT</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/TRX.png" alt="USDD icon" class="token-logo ml-4">TRX</a>
+                                <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                  href="#">
+                                  <img src="/static/media/icon/SUN.png" alt="USDD icon" class="token-logo ml-4">SUN</a>
+                              </div>
+                            </div>
+                            <!-- <div class="ant-select-selector"><span class="ant-select-selection-search"><input
                                   autocomplete="off" type="search" class="ant-select-selection-search-input"
                                   role="combobox" aria-haspopup="listbox" aria-owns="rc_select_0_list"
                                   aria-autocomplete="list" aria-controls="rc_select_0_list"
@@ -239,7 +297,7 @@
                                 class="ant-select-selection-item"><img src="/static/media/usdt.e3719fbd.svg"
                                   alt="usdt icon" class="token-logo">USDT</span></div><span class="ant-select-arrow"
                               unselectable="on" aria-hidden="true" style="user-select: none;"><img
-                                src="/static/media/white-triangle-down.86bd9763.svg"></span>
+                                src="/static/media/white-triangle-down.86bd9763.svg"></span> -->
                           </div>
                         </div>
                       </div>
@@ -247,21 +305,25 @@
                         <div class="info-row">
                           <div class="from-text">To</div>
                           <div class="flex"><span class="balance-text">Balance</span><span class="balance-value">--
-                              USDJ</span></div>
+                              USDD</span></div>
                         </div>
                         <div class="flex"><input placeholder="0" class="ant-input wallet to-input en" type="text"
                             value="" style="caret-color: transparent;">
                           <div class="ant-select ant-select-single ant-select-show-arrow">
-                            <div class="ant-select-selector"><span class="ant-select-selection-search"><input
-                                  autocomplete="off" type="search" class="ant-select-selection-search-input"
+                            <div class="ant-select-selector">
+                              <!-- <span class="ant-select-selection-search">
+                                <input autocomplete="off" type="search" class="ant-select-selection-search-input"
                                   role="combobox" aria-haspopup="listbox" aria-owns="rc_select_1_list"
                                   aria-autocomplete="list" aria-controls="rc_select_1_list"
                                   aria-activedescendant="rc_select_1_list_0" readonly="" unselectable="on" value=""
-                                  id="rc_select_1" style="opacity: 0;"></span><span
-                                class="ant-select-selection-item"><img src="/static/media/usdj.ccbe1082.svg"
-                                  alt="usdj icon" class="token-logo">USDJ</span></div><span class="ant-select-arrow"
-                              unselectable="on" aria-hidden="true" style="user-select: none;"><img
-                                src="/static/media/white-triangle-down.86bd9763.svg"></span>
+                                  id="rc_select_1" style="opacity: 0;">
+                              </span> -->
+                              <span class="ant-select-selection-item">
+                                <img src="/static/media/icon/USDD.png" alt="usdj icon" class="token-logo">USDD</span>
+                            </div>
+                            <span class="ant-select-arrow" unselectable="on" aria-hidden="true"
+                              style="user-select: none;">
+                              <img src="/static/media/white-triangle-down.86bd9763.svg"></span>
                           </div>
                         </div>
                       </div>
@@ -307,7 +369,7 @@
                           <div class="flex"><input placeholder="Enter an Amount" class="ant-input from-input en"
                               type="text" value="">
                             <div class="ant-select ant-select-single ant-select-show-arrow">
-                              <div class="ant-select-selector"><span class="ant-select-selection-search"><input
+                              <!-- <div class="ant-select-selector"><span class="ant-select-selection-search"><input
                                     autocomplete="off" type="search" class="ant-select-selection-search-input"
                                     role="combobox" aria-haspopup="listbox" aria-owns="rc_select_2_list"
                                     aria-autocomplete="list" aria-controls="rc_select_2_list"
@@ -316,7 +378,60 @@
                                   class="ant-select-selection-item"><img src="/static/media/usdt.e3719fbd.svg"
                                     alt="usdt icon" class="token-logo">USDT</span></div><span class="ant-select-arrow"
                                 unselectable="on" aria-hidden="true" style="user-select: none;"><img
-                                  src="/static/media/white-triangle-down.86bd9763.svg"></span>
+                                  src="/static/media/white-triangle-down.86bd9763.svg"></span> -->
+                              <div class="dropdown">
+                                <span class="btn btn-secondary dropdown-toggle ant-select-selector py-0 px-1 min_w"
+                                  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                  aria-expanded="false">
+                                  <span class="dropdown-centerCenter">
+                                    <img src="/static/media/icon/BTC.png" alt="usdj icon" class="token-logo">BTC<img
+                                      class=" pl-4" src="/static/media/white-triangle-down.86bd9763.svg"></span>
+
+                                </span>
+                                <!-- aaaaaaa -->
+                                <div class="dropdown-menu h-auto USD-bg-dark p-0 m-0"
+                                  aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/BTC.png" alt="USDD icon"
+                                      class="token-logo ml-4">BTC1</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/ETH.png" alt="USDD icon"
+                                      class="token-logo ml-4">ETH</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/LTC.png" alt="USDD icon"
+                                      class="token-logo ml-4">LTC</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/HT.png" alt="USDD icon" class="token-logo ml-4">HT</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/USDC.png" alt="USDD icon"
+                                      class="token-logo ml-4">USDC</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/TUSD.png" alt="USDD icon"
+                                      class="token-logo ml-4">TUSD</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/USDJ.png" alt="USDD icon"
+                                      class="token-logo ml-4">USDJ</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/USDT.png" alt="USDD icon"
+                                      class="token-logo ml-4">USDT</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/TRX.png" alt="USDD icon"
+                                      class="token-logo ml-4">TRX</a>
+                                  <a class="dropdown-item text-center px-0 py-2 rounded centerCenter h5 text-light mb-1"
+                                    href="#">
+                                    <img src="/static/media/icon/SUN.png" alt="USDD icon"
+                                      class="token-logo ml-4">SUN</a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -324,21 +439,25 @@
                           <div class="info-row">
                             <div class="from-text">To</div>
                             <div class="flex"><span class="balance-text">Balance</span><span class="balance-value">--
-                                USDJ</span></div>
+                                USDD</span></div>
                           </div>
                           <div class="flex"><input placeholder="0" class="ant-input wallet to-input en" type="text"
                               value="" style="caret-color: transparent;">
                             <div class="ant-select ant-select-single ant-select-show-arrow">
-                              <div class="ant-select-selector"><span class="ant-select-selection-search"><input
-                                    autocomplete="off" type="search" class="ant-select-selection-search-input"
-                                    role="combobox" aria-haspopup="listbox" aria-owns="rc_select_3_list"
-                                    aria-autocomplete="list" aria-controls="rc_select_3_list"
-                                    aria-activedescendant="rc_select_3_list_0" readonly="" unselectable="on" value=""
-                                    id="rc_select_3" style="opacity: 0;"></span><span
-                                  class="ant-select-selection-item"><img src="/static/media/usdj.ccbe1082.svg"
-                                    alt="usdj icon" class="token-logo">USDJ</span></div><span class="ant-select-arrow"
-                                unselectable="on" aria-hidden="true" style="user-select: none;"><img
-                                  src="/static/media/white-triangle-down.86bd9763.svg"></span>
+                              <div class="ant-select-selector">
+                                <!-- <span class="ant-select-selection-search">
+                                                              <input autocomplete="off" type="search" class="ant-select-selection-search-input"
+                                                                role="combobox" aria-haspopup="listbox" aria-owns="rc_select_1_list"
+                                                                aria-autocomplete="list" aria-controls="rc_select_1_list"
+                                                                aria-activedescendant="rc_select_1_list_0" readonly="" unselectable="on" value=""
+                                                                id="rc_select_1" style="opacity: 0;">
+                                                            </span> -->
+                                <span class="ant-select-selection-item">
+                                  <img src="/static/media/icon/USDD.png" alt="usdj icon" class="token-logo">USDD</span>
+                              </div>
+                              <span class="ant-select-arrow" unselectable="on" aria-hidden="true"
+                                style="user-select: none;">
+                                <img src="/static/media/white-triangle-down.86bd9763.svg"></span>
                             </div>
                           </div>
                         </div>
