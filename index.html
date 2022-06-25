@@ -82,6 +82,7 @@
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="apple-touch-icon" href="/logo192.png">
   <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/modal.css">
   <link rel="manifest" href="/manifest.json">
   <title>SUN | First integrated platform for stablecoin swap, stake-mining and self-governance on TRON</title>
   <link href="/css/chunk9.css" rel="stylesheet">
@@ -335,7 +336,40 @@
                         </div>
                         <div class="via-pool"><span class="via">預估手續費: </span>103 TRX</div>
                       </div>
-                      <div class="submit-btn ">Connect Wallet</div>
+                      <!--  -->
+                      <div type="button" class="submit-btn" data-toggle="modal" data-target="#exampleModalCenter1">
+                        Connect Wallet</div>
+                      <!-- Modal -->
+                      <div class="modal fade fade-bg" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="row p-0 m-0">
+                              <div class="col-9"></div>
+                              <div class="col-3">
+                                <div type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-header p-0 border-0">
+                              <!-- Connect -->
+                              <h5 class="modal-title m-auto" id="exampleModalLongTitle">Connect
+                                Wallet</h5>
+                            </div>
+                            <div class="modal-body">
+                              <div class="connect-items">
+                                <span>tronlink</span>
+                                <img src="/static/media/tronlink.png" alt="">
+                              </div>
+                              <!-- <div class="connect-items">
+                                <span>TokenPocket</span>
+                                <img src="/static/media/tokenpocket.png" alt="">
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -470,23 +504,36 @@
                         </div>
 
                         <!--  -->
-                        <button type="button" class="submit-btn " data-toggle="modal"
-                          data-target="#exampleModalCenter">Connect Wallet</button>
+                        <div type="button" class="submit-btn" data-toggle="modal" data-target="#exampleModalCenter">
+                          Connect Wallet</div>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        <div class="modal fade fade-bg" id="exampleModalCenter" tabindex="-1" role="dialog"
                           aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered align-items-end" role="document">
                             <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
+                              <div class="row p-0 m-0">
+                                <div class="col-9"></div>
+                                <div class="col-3">
+                                  <div type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal-header p-0 border-0">
+                                <!-- Connect -->
+                                <h5 class="modal-title m-auto" id="exampleModalLongTitle">Connect
+                                  Wallet</h5>
                               </div>
                               <div class="modal-body">
-                                ...
+                                <div class="connect-items">
+                                  <span>imToken</span>
+                                  <img src="/static/media/imtoken.webp" alt="">
+                                </div>
+                                <div class="connect-items">
+                                  <span>TokenPocket</span>
+                                  <img src="/static/media/tokenpocket.png" alt="">
+                                </div>
                               </div>
-
                             </div>
                           </div>
                         </div>
