@@ -344,7 +344,7 @@
   content: " ";
   position: absolute;
   right: 0;
-  background: url(/static/media/coins-bg.be42a506.svg);
+  background: url(../static/media/coins-bg.be42a506.svg);
   background-repeat: no-repeat;
   width: 120px;
   height: 138px;
@@ -501,16 +501,16 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
-  background-image: url(/static/media/swap-box-arrow.692c6dfa.svg);
+  background-image: url(../static/media/swap-box-arrow.692c6dfa.svg);
 }
 .hero-bg .hero .hero-swap-box-card .box-body .swap-box-arrow:before {
-  content: url(/static/media/swap-box-arrow-purple.303a15ec.svg);
+  content: url(../static/media/swap-box-arrow-purple.303a15ec.svg);
   width: 0;
   height: 0;
   visibility: hidden;
 }
 .hero-bg .hero .hero-swap-box-card .box-body .swap-box-arrow:hover {
-  background-image: url(/static/media/swap-box-arrow-purple.303a15ec.svg);
+  background-image: url(../static/media/swap-box-arrow-purple.303a15ec.svg);
 }
 .hero-bg .hero .hero-swap-box-card .box-body .input-part {
   background: #3b3d4b;
@@ -1147,7 +1147,7 @@
   display: block;
   width: 62.5px;
   height: 27.5px;
-  background: url(/static/media/apy_hot.bc4520c4.svg) 0 0 no-repeat;
+  background: url(../static/media/apy_hot.bc4520c4.svg) 0 0 no-repeat;
   background-size: 100%;
   position: absolute;
   top: 0;
@@ -1535,7 +1535,7 @@
   margin: 40px 0 0;
   border-radius: 30px;
   padding: -5px 0 29px;
-  background-image: url(/static/media/gear.6b7c6b22.svg);
+  background-image: url(../static/media/gear.6b7c6b22.svg);
   background-repeat: no-repeat;
   background-position: -5px 50px;
 }
