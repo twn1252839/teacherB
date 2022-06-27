@@ -1428,7 +1428,7 @@ html .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
     text-align: left;
   }
   #root footer .footer-box .link-box a:nth-child(-n + 2) {
-    display: none;
+    /* display: none; */
   }
   #root footer .footer-box .logo-link a:first-child {
     margin-left: 5px;
