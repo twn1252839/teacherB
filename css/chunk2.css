@@ -265,7 +265,8 @@
 }
 .hero-bg .hero .usdd-link {
   max-width: 90%;
-  margin: 13px 24px 30px 9px;
+  /* margin: 13px 24px 30px 9px; */
+  margin: 13px 17px 30px;
 }
 .hero-bg .hero .hero-tvl-card,
 .hero-bg .hero .hero-tvl-card .bg-tvl-card1,
@@ -509,9 +510,9 @@
   height: 0;
   visibility: hidden;
 }
-.hero-bg .hero .hero-swap-box-card .box-body .swap-box-arrow:hover {
+/* .hero-bg .hero .hero-swap-box-card .box-body .swap-box-arrow:hover {
   background-image: url(../static/media/swap-box-arrow-purple.303a15ec.svg);
-}
+} */
 .hero-bg .hero .hero-swap-box-card .box-body .input-part {
   background: #3b3d4b;
   border-radius: 15px;

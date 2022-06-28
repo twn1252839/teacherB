@@ -62,3 +62,7 @@
 .modal-backdrop {
   display: none !important;
 }
+
+.cursor_default {
+  cursor: default !important;
+}
